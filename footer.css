@@ -1,0 +1,16 @@
+.foot {
+  margin-top: 5%;
+  background: #0f7359;
+  z-index: 2;
+  padding: 1%;
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 1%;
+}
