@@ -7,7 +7,15 @@ body {
   background-attachment: scroll;
   background-size: 100%, 100%;
 }
+html {
+    scroll-behavior: smooth;
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 /*--------------TOP BANNER------------*/
 .logo > img {
   width: 100%;
@@ -29,7 +37,6 @@ body {
 .topbanner {
   background: black;
   display: flex;
-  text-align: left;
   justify-content: right;
 }
 
@@ -55,11 +62,6 @@ body {
 }
 
 .topnav a:hover {
-  background-color: #192f59;
-  color: white;
-}
-
-.topnav a.active {
   background-color: #c852cb;
   color: white;
 }
@@ -76,13 +78,32 @@ body {
 }
 
 .banner > img {
+    margin-top: 4%;
       width: 50%;
+}
 
+.banner > img:hover {
+    animation: bannerpop 0.5s;
+}
+
+@keyframes bannerpop {
+  0% {
+    width: 50%;
+  } /* Dark red */
+
+  50% {
+    width: 60%;;
+  } /* Dark blue */
+ */
+  100% {
+     width: 50%;
+  } 
+    
 }
 
 .title {
   padding: 2%;
-  margin-top: 13%;
+  margin-top: 25%;
   margin-bottom: 5%;
   color: white;
   text-align: center;
@@ -92,7 +113,7 @@ body {
 }
 
 h2 {
-  margin-top: 1%;
+  margin-top: 10%;
   text-align: center;
   color: white;
   font-size: 300%;
@@ -103,6 +124,13 @@ h3 {
   font-size: 300%;
 }
 
+#postdetails {
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 70%
+}
+
 h4 {
   color: white;
   text-align: center;
@@ -111,6 +139,18 @@ h4 {
   top: 50%;
   padding: 2%;
   background: black;
+}
+
+h2:hover {
+    color: #c852cb;
+}
+
+h3:hover {
+    color: #c852cb;
+}
+
+h4:hover {
+    background: #c852cb;
 }
 
 .showcase {
@@ -130,15 +170,18 @@ h4 {
 }
 
 .posts {
-  margin-left: 30%;
-  margin-right: 31.5%;
   z-index: 2;
-  width: 40%;
-  height: 0%;
-  justify-content: center;
-  text-align: center;
-  background-color: white; /* Or another light color */
+  width: auto;
+  height: auto;
   padding: 0;
+  text-align: center;
+}
+
+.location {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 3px solid rgb(51, 51, 51);
 }
 
 iframe {
@@ -149,37 +192,99 @@ iframe {
 }
 
 .maps {
-  margin-top: 1%;
-  width: 40%;
-  margin-left: 30%;
+  flex: 1;
 }
+
+
 
 @keyframes title {
   0% {
-    background-color: #8b0000;
+    background-color: #0f7359;
   } /* Dark red */
-  25% {
-    background-color: #8b8b00;
-  } /* Dark yellow */
+
   50% {
-    background-color: #00008b;
+    background-color: #c852cb;
   } /* Dark blue */
-  75% {
-    background-color: #006400;
-  } /* Dark green */
+ */
   100% {
-    background-color: #8b0000;
+    background-color: #0f7359;
   } /* Dark red */
 }
 
 .filtered-video {
-  z-index: -1;
+  z-index: -2;
   filter: blur(5px);
 }
 
 .details {
-    margin-top: 5%;
     color: white;
     text-align: center;
     z-index: 2;
+    flex: 1;
+    font-size: 130%;
+    background: #181818
   }
+
+.details > img {
+    padding-top: 15%;
+    width: 30%
+}
+.details:hover {
+    background: #0f7359;
+}
+
+#bob {
+    animation: bob 3s infinite;
+;
+    font-size: 200%;
+    
+}
+
+@keyframes bob {
+  0% {
+    color: white;
+  } /* Dark red */
+
+  50% {
+    color: #181818;
+  } /* Dark blue */
+ */
+  100% {
+    color: white;
+  } /* Dark red */
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #0f7359;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.foot a {
+  color: white;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+#myBtn:hover {
+  background-color: white;
+  color: black;
+}
+</style>
+</head>
+<body>

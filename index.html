@@ -7,6 +7,8 @@
     <title>VNUK DANCE CLUB</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
@@ -14,25 +16,28 @@
   </head>
 
   <body>
-    <div class="topbanner">
+    <a href="#location1">
+    <div class="topbanner" id="topnav1">
       <div class="slogan">
         <img src="Assets/slogan.png" />
       </div>
-
       <div class="logo">
         <img src="Assets/drenzy.png" />
       </div>
     </div>
+      </a>
 
     <nav>
       <!-------NAVIGATION BAR-------------->
       <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">Location</a>
+        <a href="#topnav1" class="active">Home</a>
+        <a href="#news1">News</a>
+        <a href="#location1">Contact</a>
+        <a href="#location1">Location</a>
       </div>
     </nav>
+      
+      <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
     <div class="banner">
         <img src="Assets/bannertitle.png">
@@ -57,21 +62,10 @@
       </video>
     </div>
 
-    <h2>tin tức mới nhất</h2>
-    <div class="posts">
-      <iframe
-        src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwe.are.drenzy%2Fposts%2Fpfbid02g8JVVxr7wrgzk5uj5YB8YrCCNNX4cUyfCCucEuG4pSFMg7NwJyJXz8paFkPU13qFl&show_text=true&width=500"
-        width="500"
-        height="700"
-        style="border: none; overflow: hidden"
-        scrolling="yes"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
-    </div>
-
-    <h3>tìm chúng tôi</h3>
+    <h3 id="location1">tìm chúng tôi</h3>
+      
+      
+    <div class="location">
     <div class="maps">
       <iframe
         style="filter: invert(90%) hue-rotate(180deg)"
@@ -86,19 +80,66 @@
     </div>
 
     <div class="details">
+      <img src="Assets/VUNK%20logo.png">
       <p>DRENZY Dance Crew <br> Viện Nghiên cứu và Đào tạo Việt-Anh, Đà Nẵng</p>
       <p>drenzy@vnuk.edu.vn</p>
+      <p id="bob">JOIN NOW <br> VNUK DANCE CLUB</p>
     </div>
+    </div>
+      
+      
+    <h2 id="news1">tin tức mới nhất</h2>
+    <div class="posts">
+        
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fwe.are.drenzy%2Fposts%2Fpfbid02g8JVVxr7wrgzk5uj5YB8YrCCNNX4cUyfCCucEuG4pSFMg7NwJyJXz8paFkPU13qFl&show_text=false&width=500" width="500" height="498" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+      
+<p id="postdetails">[HTTT]💥 CHÍNH THỨC MỞ BÁN VÉ ĐÊM NHẠC TỪ THIỆN “THE SOUND OF DREAM” 💥 <br>
+ Nếu bạn muốn được lắng mình trong những giai điệu du dương, thưởng thức <br>những tiết mục đặc biệt, vừa có thể giúp đỡ phần nào những mảnh đời có hoàn cảnh khó khăn; <br> còn chần chừ gì mà không lên “một chiến hẹn xinh” vào cuối tuần này để tặng cho bản thân một khoảng thời gian <br>“chờ iu chill” cùng chúng mình nhé!
+ Toàn bộ số tiền thu được từ đêm nhạc sẽ dùng cho mục đích từ thiện: Đến thăm và tặng quà <br>cho các em nhỏ tại “Trung Tâm Nuôi Dưỡng Trẻ Mồ Côi, Hội Chữ Thập Đỏ Đà Nẵng”.
+ Sự ủng hộ nhiệt tình của mọi người là nguồn động lực to lớn để chương trình có thể<br> diễn ra thành công tốt đẹp. <br> Một lần nữa xin chân thành <br>cảm ơn mọi người đã giúp đỡ và ủng hộ CLB.
+🎟️Đặt vé tại:  <br>   
+https://docs.google.com/.../1FAIpQLSfhZbeFprqnq4.../viewform <br>
+ Thời gian : 19h - 20h30 Ngày 11/03/2023 (Thứ 7)
+ Địa điểm: Trường Swinburne - 2A Đường 2 Tháng 9, Phường Hòa Cường Bắc, Quận Hải Châu, Da Nang, Vietnam.
+
+<br>Mọi thắc mắc xin gửi về email: swinburnevolunteersclub@gmail.com
+#SwinburneVietnam #SwinShare #TheSoundofDream</p>
+
   </body>
+    
+    
 
   <footer>
     <div class="foot">
       <ul>
-        <li>contact us</li>
-        <li>Location</li>
-        <li>report an issue</li>
-        <li>Our facebook page</li>
+        <a href="#topnav1" class="active">Home</a>
+        <a href="#news1">News</a>
+        <a href="#location1">Contact</a>
+        <a href="#location1">Location</a>
       </ul>
     </div>
   </footer>
+    <script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
 </html>

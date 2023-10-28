@@ -1,0 +1,51 @@
+@media only screen and (max-width: 816px) {
+    body {
+        font-size: 80%
+    }
+    
+
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        font-size: 60%;
+        background: black
+    }
+    
+    .topnav a {
+        float: none;
+    }
+    
+    .topbanner {
+        justify-content: center
+    }
+    
+    .title {
+        margin-top: 5%
+    }
+    
+    .video-overlay {
+        font-size: 100%;
+
+    }
+    
+    .location {
+        display: grid;
+    }
+    
+    #postdetails {
+        font-size: 1%;
+        width: 80%;
+        margin-left: 10%
+    }
+    
+    iframe {
+        height: 100%
+    }
+    
+    .posts > iframe {
+        height: 400px;
+        width: 300px
+    }
+
+}
