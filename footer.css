@@ -16,7 +16,16 @@ li {
 }
 
 .watermark {
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
+}
 
+.foot a {
+  color: white;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
 }

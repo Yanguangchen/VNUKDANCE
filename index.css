@@ -8,24 +8,17 @@ body {
   background-size: 100%, 100%;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 /*--------------TOP BANNER------------*/
 .logo > img {
   width: 100%;
   height: auto;
 }
-
 .logo {
   width: 10%;
 }
-
 .slogan {
   width: 20%;
   margin-top: 4%;
@@ -33,20 +26,17 @@ html {
 .slogan > img {
   width: 100%;
 }
-
 .topbanner {
   background: black;
   display: flex;
   justify-content: right;
 }
-
 .topnav {
   overflow: hidden;
   background-color: #0f7359;
   margin: auto;
   text-decoration: bold;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -60,15 +50,14 @@ html {
   font-size: 100%;
   font-weight: bold;
 }
-
 .topnav a:hover {
   background-color: #c852cb;
   color: white;
 }
-
 .topnav .icon {
   display: none;
 }
+/*--------------------------------------*/
 
 .banner {
   margin-top: 7%;
@@ -78,29 +67,32 @@ html {
 }
 
 .banner > img {
-    margin-top: 4%;
-      width: 50%;
+  margin-top: 4%;
+  width: 50%;
 }
 
 .banner > img:hover {
-    animation: bannerpop 0.5s;
+  animation: bannerpop 0.5s;
+}
+
+#bob {
+  animation: bob 3s infinite;
+  font-size: 200%;
 }
 
 @keyframes bannerpop {
   0% {
     width: 50%;
-  } /* Dark red */
-
+  }
   50% {
-    width: 60%;;
-  } /* Dark blue */
- */
+    width: 60%;
+  }
   100% {
-     width: 50%;
-  } 
-    
+    width: 50%;
+  }
 }
 
+/*----DANCE QUOTE BANNER----*/
 .title {
   padding: 2%;
   margin-top: 20%;
@@ -111,6 +103,20 @@ html {
   background: #0f7359;
   animation: title 10s infinite;
 }
+
+@keyframes bob {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #181818;
+  }
+  100% {
+    color: white;
+  }
+}
+
+/*-------------------------*/
 
 h2 {
   margin-top: 10%;
@@ -125,10 +131,10 @@ h3 {
 }
 
 #postdetails {
-    color: white;
-    width: 100%;
-    text-align: center;
-    font-size: 70%
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 70%;
 }
 
 h4 {
@@ -141,34 +147,37 @@ h4 {
   background: black;
 }
 
+/*----------HOVER EFFECTS-------------------*/
 h2:hover {
-    color: #c852cb;
+  color: #c852cb;
 }
 
 h3:hover {
-    color: #c852cb;
+  color: #c852cb;
 }
 
 h4:hover {
-    background: #c852cb;
+  background: #c852cb;
 }
 
 .showcase {
   position: relative;
 }
 
+/*----------Overlay on video----------------*/
 .video-overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white; /* This will make the text color white, you can change this as needed */
-  z-index: 10; /* This will make sure the heading appears above the video */
-  font-size: 2em; /* Adjust font size as needed */
+  color: white;
+  z-index: 10;
+  font-size: 2em;
   text-align: center;
   background: #0f7359;
 }
 
+/*----------Social Media Container----------*/
 .posts {
   z-index: 2;
   width: auto;
@@ -177,11 +186,12 @@ h4:hover {
   text-align: center;
 }
 
+/*------lOCATION AND CONTACT CONTAINER------*/
 .location {
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    border: 3px solid rgb(51, 51, 51);
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 3px solid rgb(51, 51, 51);
 }
 
 iframe {
@@ -195,66 +205,29 @@ iframe {
   flex: 1;
 }
 
-
-
-@keyframes title {
-  0% {
-    background-color: #0f7359;
-  } /* Dark red */
-
-  50% {
-    background-color: #c852cb;
-  } /* Dark blue */
- */
-  100% {
-    background-color: #0f7359;
-  } /* Dark red */
-}
-
 .filtered-video {
   z-index: -2;
   filter: blur(5px);
 }
 
+/*------------container beside maps--------*/
 .details {
-    color: white;
-    text-align: center;
-    z-index: 2;
-    flex: 1;
-    font-size: 130%;
-    background: #181818
-  }
+  color: white;
+  text-align: center;
+  z-index: 2;
+  flex: 1;
+  font-size: 130%;
+  background: #181818;
+}
 
 .details > img {
-    padding-top: 15%;
-    width: 30%
+  padding-top: 15%;
+  width: 30%;
 }
 .details:hover {
-    background: #0f7359;
+  background: #0f7359;
 }
-
-#bob {
-    animation: bob 3s infinite;
-;
-    font-size: 200%;
-    
-}
-
-@keyframes bob {
-  0% {
-    color: white;
-  } /* Dark red */
-
-  50% {
-    color: #181818;
-  } /* Dark blue */
- */
-  100% {
-    color: white;
-  } /* Dark red */
-}
-
-
+/*--------JUMP TO TOP BUTTON---------------*/
 #myBtn {
   display: none;
   position: fixed;
@@ -271,20 +244,7 @@ iframe {
   border-radius: 4px;
 }
 
-.foot a {
-  color: white;
-  text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-decoration: none;
-  font-size: 100%;
-  font-weight: bold;
-}
-
 #myBtn:hover {
   background-color: white;
   color: black;
 }
-</style>
-</head>
-<body>

@@ -1,88 +1,83 @@
 @media only screen and (max-width: 816px) {
-    body {
-        font-size: 80%
-    }
-    
-    .title {
-        margin-top: 18%;
-    }
-    
-    
-    .location {
-        display: grid;
-    }
-    
-    #postdetails {
-        font-size: 1%;
-        width: 80%;
-        margin-left: 10%
-    }
-    
-    iframe {
-        height: 100%
-    }
-    
-    .posts > iframe {
-        height: 315px;
-        width: 300px
-    }
-    
+  body {
+    font-size: 80%;
+  }
 
+  .title {
+    margin-top: 18%;
+  }
+
+  .location {
+    display: grid;
+  }
+
+  #postdetails {
+    font-size: 1%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  iframe {
+    height: 100%;
+  }
+
+  .posts > iframe {
+    height: 315px;
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    body {
-        font-size: 60%;
-        background: black;
-        background-image: url(Assets/banner.webp);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-    
-    .topnav {
-        padding-left: 5%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-    }
-    
-    .title {
-        margin-top: 12%;
-    }
-    .topnav a {
-        border: 1px solid white;
-        font-size: 180%
-    }
-    
-    .topbanner {
-        justify-content: center
-    }
-    
-    .title {
-        margin-top: 5%
-    }
-    
-    .video-overlay {
-        font-size: 100%;
+  body {
+    font-size: 60%;
+    background: black;
+    background-image: url(Assets/banner.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 
-    }
-    
-    .location {
-        display: grid;
-    }
-    
-    #postdetails {
-        font-size: 1%;
-        width: 80%;
-        margin-left: 10%
-    }
-    
-    iframe {
-        height: 100%
-    }
-    
-    .posts > iframe {
-        height: 315px;
-        width: 300px
-    }
+  .topnav {
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
 
+  .title {
+    margin-top: 12%;
+  }
+  .topnav a {
+    border: 1px solid white;
+    font-size: 180%;
+  }
+
+  .topbanner {
+    justify-content: center;
+  }
+
+  .title {
+    margin-top: 5%;
+  }
+
+  .video-overlay {
+    font-size: 100%;
+  }
+
+  .location {
+    display: grid;
+  }
+
+  #postdetails {
+    font-size: 1%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  iframe {
+    height: 100%;
+  }
+
+  .posts > iframe {
+    height: 315px;
+    width: 300px;
+  }
 }
