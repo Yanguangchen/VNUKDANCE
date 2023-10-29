@@ -3,17 +3,54 @@
         font-size: 80%
     }
     
+    .title {
+        margin-top: 18%;
+    }
+    
+    
+    .location {
+        display: grid;
+    }
+    
+    #postdetails {
+        font-size: 1%;
+        width: 80%;
+        margin-left: 10%
+    }
+    
+    iframe {
+        height: 100%
+    }
+    
+    .posts > iframe {
+        height: 315px;
+        width: 300px
+    }
+    
 
 }
 
 @media only screen and (max-width: 400px) {
     body {
         font-size: 60%;
-        background: black
+        background: black;
+        background-image: url(Assets/banner.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
     }
     
+    .topnav {
+        padding-left: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    
+    .title {
+        margin-top: 12%;
+    }
     .topnav a {
-        float: none;
+        border: 1px solid white;
+        font-size: 180%
     }
     
     .topbanner {
@@ -44,7 +81,7 @@
     }
     
     .posts > iframe {
-        height: 400px;
+        height: 315px;
         width: 300px
     }
 
